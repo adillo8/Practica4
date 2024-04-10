@@ -2,7 +2,7 @@ package dominio;
 public class CalculadoraDistancia {
 
       /**
-     * Calcula la distancia de edición entre dos cadenas de caracteres.
+     * Calcula la distancia de edición entre dos cadenas de caracteres de manera iterativa.
      * s1 La primera cadena
      * s2 La segunda cadena
      * return La distancia de edición entre las dos cadenas s1 y s2.
@@ -29,9 +29,10 @@ public class CalculadoraDistancia {
                 } else if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
                     matriz[i][j] = matriz[i - 1][j - 1];
                 } else {
-                    matriz[i][j] = 1 + Math.min(Math.min(matriz[i][j - 1], //insertar
-                    matriz[i - 1][j]), //eliminar
-                    matriz[i - 1][j - 1]);//reemplazar
+                    //en este caso insertar y eliminar cuentan como una accion y reemplazar cuenta como 2
+                    matriz[i][j] = Math.min(Math.min(matriz[i][j - 1] + 1, // insertar
+                        matriz[i - 1][j] + 1), // eliminar
+                        matriz[i - 1][j - 1] + 2); // reemplazar
                 }
             }
         }

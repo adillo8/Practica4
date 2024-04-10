@@ -1,5 +1,5 @@
 # Practica4
-El código contiene un algoritmo para calcular la distancia de edición entre dos cadenas de caracteres(s1 y s2). La distancia de edición mide la cantidad mínima de operaciones necesarias para transformar una cadena en otra. Estas operaciones pueden ser inserciones, eliminaciones o reemplazos de caracteres.
+El código contiene un algoritmo para calcular la distancia de edición entre dos cadenas de caracteres(s1 y s2) de manera iterativa. La distancia de edición mide la cantidad mínima de operaciones necesarias para transformar una cadena en otra. Estas operaciones pueden ser inserciones, eliminaciones o reemplazos de caracteres.
 
 Para ejecutar este codigo sera necesario tener instalado git bash en su dispositivo 
 
